@@ -1,29 +1,31 @@
 package com.mcmanuel.QuizProject.question;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "question_id")
     private Long id;
+
+    @Enumerated(EnumType.STRING)
     private DifficultyLevel difficulty;
+
     private String title;
+
     private String question;
+
     private String option1;
     private String option2;
     private String option3;
     private String option4;
+
     private String correctAnswer;
 }
