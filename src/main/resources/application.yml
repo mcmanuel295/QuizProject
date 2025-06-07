@@ -1,1 +1,15 @@
-spring.application.name=QuizProject
+spring:
+  application:
+    name: QuizProject
+
+  datasource:
+    url : jdbc:mysql://localhost:3306/quiz_db
+    password: Oea75357@
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
