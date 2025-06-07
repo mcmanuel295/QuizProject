@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 public class QuestionController {
-    private final QuestionService questionService;
+    private final QuestionServiceImp questionService;
 }
