@@ -28,6 +28,12 @@ public class QuestionController {
         return new ResponseEntity<>( questionService.getAllQuestions(),HttpStatus.OK);
     }
 
+    @GetMapping("/{category}")
+    ResponseEntity<List<Question>> getQuestionsByCategory(@PathVariable String category){
+        return new ResponseEntity<>( questionService.getQuestionsByCategory(category),HttpStatus.OK);
+    }
+
+
     @PutMapping("/{id}")
     ResponseEntity<Question> updateQuestion(@PathVariable long id,@RequestBody Question question) throws Exception {
         return new ResponseEntity<>( questionService.updateQuestion(id,question),HttpStatus.OK);

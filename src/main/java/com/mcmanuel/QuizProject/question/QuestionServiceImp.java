@@ -30,6 +30,14 @@ public class QuestionServiceImp implements QuestionService{
         return questionRepo.findAll();
     }
 
+
+    @Override
+    public List<Question> getQuestionsByCategory(String category) {
+        Category.valueOf(category);
+        return questionRepo.findRandomQuestionsByCategory(category).stream()
+                .map();
+    }
+
     @Override
     public Question updateQuestion(long questionId,Question updateQuestion) throws Exception {
         Optional<Question> question = questionRepo.findById(questionId);
@@ -52,6 +60,5 @@ public class QuestionServiceImp implements QuestionService{
 
         questionRepo.deleteById(questionId);
     }
-
 
 }
