@@ -30,4 +30,44 @@ VALUES ('PYTHON', 'MEDIUM', 'A. Function', 'B. Class', 'C. Method', 'D. Variable
 
 -- Question 5
 INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
-VALUES ('JAVA', 'HARD', 'A. Encapsulation', 'B.
+VALUES ('JAVA', 'HARD', 'A. Encapsulation', 'B. Polymorphism','C. Inheritance', 'D. Abstraction', 'Which OOP concept allows restricting access to certain members of a class?', 'A');
+
+-- Question 6
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'EASY', 'A. List', 'B. Set', 'C. Tuple', 'D. Dictionary', 'Which data type in Python is ordered and mutable?', 'A');
+
+-- Question 7
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'MEDIUM', 'A. ArrayList', 'B. LinkedList', 'C. HashSet', 'D. TreeMap', 'Which Java collection stores elements in a sorted order?', 'D');
+
+-- Question 8
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'HARD', 'A. Recursion', 'B. Iteration', 'C. Abstraction', 'D. Encapsulation', 'What is the process in which a function calls itself directly or indirectly?', 'A');
+
+-- Question 9
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'EASY', 'A. JVM', 'B. JRE', 'C. JDK', 'D. JAR', 'Which component is responsible for executing Java programs?', 'A');
+
+-- Question 10
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'MEDIUM', 'A. Pass by Value', 'B. Pass by Reference', 'C. Pass by Object', 'D. Pass by Assignment', 'How are arguments passed to functions in Python?', 'C');
+
+-- Question 11
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'HARD', 'A. Checked Exception', 'B. Unchecked Exception', 'C. Runtime Exception', 'D. Compile-time Exception', 'Which type of exception is not required to be caught or declared?', 'B');
+
+-- Question 12
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'EASY', 'A. Class', 'B. Object', 'C. Module', 'D. Package', 'In Python, what is an instance of a class called?', 'B');
+
+-- Question 13
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'MEDIUM', 'A. 127', 'B. 255', 'C. 32767', 'D. 2147483647', 'What is the maximum value that can be stored in a Java byte data type?', 'A');
+
+-- Question 14
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'HARD', 'A. Class', 'B. Function', 'C. Module', 'D. Package', 'In Python, which one is a reusable piece of code that encapsulates attributes and behaviors?', 'A');
+
+-- Question 15
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'EASY', 'A. String', 'B. StringBuilder', 'C. StringBuffer', 'D. Character', 'Which Java class is used for mutable string manipulation?', 'B');
