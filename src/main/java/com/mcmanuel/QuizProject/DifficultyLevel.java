@@ -1,4 +1,4 @@
-package com.mcmanuel.QuizProject.question;
+package com.mcmanuel.QuizProject;
 
 public enum DifficultyLevel {
 

@@ -10,6 +10,5 @@ public interface QuestionService {
     List<Question> getAllQuestions();
     Question updateQuestion(long questionId, Question question) throws Exception;
     void deleteQuestion(long id) throws Exception;
-
-    List<Question> getQuestionsByCategory(String category);
+    List<QuestionDto> getQuestionsByCategory(String category);
 }

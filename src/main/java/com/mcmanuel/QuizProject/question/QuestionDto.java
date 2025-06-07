@@ -1,19 +1,15 @@
 package com.mcmanuel.QuizProject.question;
 
+import com.mcmanuel.QuizProject.Category;
+import com.mcmanuel.QuizProject.DifficultyLevel;
 import com.mcmanuel.QuizProject.quiz.Quiz;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.ManyToMany;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class QuestionDto {
     private Long id;
     private DifficultyLevel difficulty;

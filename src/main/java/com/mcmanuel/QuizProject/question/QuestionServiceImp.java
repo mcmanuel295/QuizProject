@@ -1,5 +1,7 @@
 package com.mcmanuel.QuizProject.question;
 
+import com.mcmanuel.QuizProject.Category;
+import com.mcmanuel.QuizProject.Mapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -32,10 +34,12 @@ public class QuestionServiceImp implements QuestionService{
 
 
     @Override
-    public List<Question> getQuestionsByCategory(String category) {
+    public List<QuestionDto> getQuestionsByCategory(String category) {
         Category.valueOf(category);
         return questionRepo.findRandomQuestionsByCategory(category).stream()
-                .map();
+                .map(Mapper::toQuestionDto)
+                .toList();
+
     }
 
     @Override

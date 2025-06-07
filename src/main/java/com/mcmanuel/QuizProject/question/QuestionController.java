@@ -28,8 +28,8 @@ public class QuestionController {
         return new ResponseEntity<>( questionService.getAllQuestions(),HttpStatus.OK);
     }
 
-    @GetMapping("/{category}")
-    ResponseEntity<List<Question>> getQuestionsByCategory(@PathVariable String category){
+    @GetMapping("/category/{category}")
+    ResponseEntity<List<QuestionDto>> getQuestionsByCategory(@PathVariable String category){
         return new ResponseEntity<>( questionService.getQuestionsByCategory(category),HttpStatus.OK);
     }
 
