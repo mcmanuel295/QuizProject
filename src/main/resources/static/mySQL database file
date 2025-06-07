@@ -1,0 +1,33 @@
+DROP TABLE IF EXISTS question;
+
+CREATE TABLE question (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR(25) DEFAULT NULL,
+    difficulty_level VARCHAR(25) DEFAULT NULL,
+    option1 VARCHAR(2550) DEFAULT NULL,
+    option2 VARCHAR(2550) DEFAULT NULL,
+    option3 VARCHAR(2550) DEFAULT NULL,
+    option4 VARCHAR(2550) DEFAULT NULL,
+    question_title VARCHAR(2550) DEFAULT NULL,
+    correct_answer CHAR(1) DEFAULT NULL
+);
+
+-- Question 1
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'EASY', 'A. A constant value', 'B. A reserved keyword', 'C. A container for storing data', 'D. A loop control structure', 'What is a variable in Java?', 'C');
+
+-- Question 2
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'EASY', 'A. True', 'B. False', 'C. None', 'D. Both A and B', 'Is Python a dynamically typed language?', 'A');
+
+-- Question 3
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'MEDIUM', 'A. 8', 'B. 16', 'C. 32', 'D. 64', 'How many bits are in a Java long data type?', 'D');
+
+-- Question 4
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('PYTHON', 'MEDIUM', 'A. Function', 'B. Class', 'C. Method', 'D. Variable', 'What is a group of related statements that perform a specific task in Python?', 'A');
+
+-- Question 5
+INSERT INTO question (category, difficulty_level, option1, option2, option3, option4, question_title, correct_answer)
+VALUES ('JAVA', 'HARD', 'A. Encapsulation', 'B.

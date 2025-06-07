@@ -1,5 +1,6 @@
 package com.mcmanuel.QuizProject.question;
 
+import com.mcmanuel.QuizProject.quiz.Quiz;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,6 +19,9 @@ public class Question {
     @Enumerated(EnumType.STRING)
     private DifficultyLevel difficulty;
 
+    @Enumerated(EnumType.STRING)
+    private Category category;
+
     private String title;
 
     private String question;
@@ -28,4 +32,7 @@ public class Question {
     private String option4;
 
     private String correctAnswer;
+
+    @ManyToMany(fetch = FetchType.EAGER,mappedBy = "questionList")
+    private Quiz quiz;
 }
