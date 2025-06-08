@@ -20,17 +20,16 @@ public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "quiz_id")
-    private Long id;
+    private Integer id;
 
-    @OneToOne(mappedBy = "quiz")
-    private User user;
-
-    private Category category;
     private int noOfQuestion;
-    private DifficultyLevel difficultyLevel;
 
     @ManyToMany(mappedBy = "quiz",cascade = CascadeType.ALL)
     private List<Question> questionList;
 
     private int score;
+
+    @OneToOne(mappedBy = "quiz")
+    private User user;
+
 }
