@@ -29,8 +29,8 @@ public class QuestionController {
     }
 
     @GetMapping("/category/{category}")
-    ResponseEntity<List<QuestionDto>> getQuestionsByCategory(@PathVariable String category){
-        return new ResponseEntity<>( questionService.getQuestionsByCategory(category),HttpStatus.OK);
+    ResponseEntity<List<QuestionDto>> getQuestionsByCategory(@PathVariable String category,@RequestParam int noOfQues){
+        return new ResponseEntity<>( questionService.getQuestionsByCategory(category,noOfQues),HttpStatus.OK);
     }
 
 

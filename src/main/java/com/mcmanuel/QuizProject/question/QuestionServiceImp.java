@@ -34,9 +34,9 @@ public class QuestionServiceImp implements QuestionService{
 
 
     @Override
-    public List<QuestionDto> getQuestionsByCategory(String category) {
+    public List<QuestionDto> getQuestionsByCategory(String category,int noOfQues) {
         Category.valueOf(category);
-        return questionRepo.findRandomQuestionsByCategory(category).stream()
+        return questionRepo.findRandomQuestionsByCategory(category,noOfQues).stream()
                 .map(Mapper::toQuestionDto)
                 .toList();
 

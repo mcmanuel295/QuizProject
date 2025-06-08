@@ -5,10 +5,8 @@ import com.mcmanuel.QuizProject.DifficultyLevel;
 import com.mcmanuel.QuizProject.question.Question;
 import com.mcmanuel.QuizProject.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
 import java.util.List;
 
 @Entity
@@ -16,13 +14,14 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "quiz_id")
     private Integer id;
 
-    private int noOfQuestion;
+    private String title;
 
     @ManyToMany(mappedBy = "quiz",cascade = CascadeType.ALL)
     private List<Question> questionList;
