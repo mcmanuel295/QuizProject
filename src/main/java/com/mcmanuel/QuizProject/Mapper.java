@@ -20,6 +20,15 @@ public class Mapper {
     }
 
     public static Question toQuestion(QuestionDto dto){
+        return Question.builder()
+                .id(dto.getId())
+                .category(dto.getCategory())
+                .difficulty(dto.getDifficulty())
+                .option1(dto.getOption1())
+                .option2(dto.getOption2())
+                .option3(dto.getOption3())
+                .option4(dto.getOption4())
 
+                .build();
     }
 }
