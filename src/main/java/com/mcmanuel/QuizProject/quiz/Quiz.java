@@ -1,6 +1,7 @@
 package com.mcmanuel.QuizProject.quiz;
 
 import com.mcmanuel.QuizProject.Category;
+import com.mcmanuel.QuizProject.DifficultyLevel;
 import com.mcmanuel.QuizProject.question.Question;
 import com.mcmanuel.QuizProject.user.User;
 import jakarta.persistence.*;
@@ -23,8 +24,11 @@ public class Quiz {
 
     @OneToOne(mappedBy = "quiz")
     private User user;
+
     private Category category;
     private int noOfQuestion;
+    private DifficultyLevel difficultyLevel;
+
     @ManyToMany(mappedBy = "quiz",cascade = CascadeType.ALL)
     private List<Question> questionList;
 
