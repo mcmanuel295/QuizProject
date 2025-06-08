@@ -10,7 +10,7 @@ public class QuizServiceImp implements  QuizService{
     private final QuizRepository quizRepo;
 
     @Override
-    public Quiz createQuiz(String category, int noOfQues, DifficultyLevel difficultyLevel) {
+    public Quiz createQuiz(String category, int noOfQues, String title) {
 
      return null;
     }
