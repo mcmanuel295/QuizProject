@@ -1,6 +1,5 @@
 package com.mcmanuel.QuizProject.quiz;
 
-import com.mcmanuel.QuizProject.DifficultyLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
