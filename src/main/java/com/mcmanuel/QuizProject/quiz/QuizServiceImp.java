@@ -17,7 +17,6 @@ public class QuizServiceImp implements  QuizService{
         List<QuestionDto> questionDtoList = questionRepo.findRandomQuestionsByCategory(category,noOfQues).;
       return Quiz.builder()
               .title(title)
-              .
               .build();
     }
 }
