@@ -1,6 +1,5 @@
 package com.mcmanuel.QuizProject.quiz;
 
-import com.mcmanuel.QuizProject.DifficultyLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +10,6 @@ public class QuizServiceImp implements  QuizService{
 
     @Override
     public Quiz createQuiz(String category, int noOfQues, String title) {
-
      return null;
     }
 }
